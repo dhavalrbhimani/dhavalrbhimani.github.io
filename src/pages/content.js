@@ -4,7 +4,7 @@ export const designation = "Full Stack Software Developer"
 export const location = "Toronto,Canada"
 
 // About
-export const about = "A Software developer with 3+ years of experience in building highly scalable backend applications(Java, Node.js, C#) in microservice architecture and SPA frontend web applications(React, Angular)";
+export const about = "A Software developer with 3+ years of experience in building highly scalable backend applications(Java, Spring Boot) in microservice architecture and SPA frontend web applications(React, Angular)";
 
 // Work Experience --> #work section
 export const work = [
@@ -15,7 +15,7 @@ export const work = [
 		org: "Intuit Inc",
 		org_url: "https://www.intuit.com/ca/",
 		location: "Toronto, Canada",
-		skills: "Java, C#, React"
+		skills: "Java, Spring Boot, Postgres, MongoDB React"
 	},
 	{
 		from: "May 2021",
@@ -24,7 +24,7 @@ export const work = [
 		org: "Rogers communications Inc",
 		org_url: "https://www.rogers.com/",
 		location: "Toronto, Canada",
-		skills: "Java, C#, Angular"
+		skills: "Java, Spring boot, Postgres, MongoDB, Angular"
 	},
 	{
 		from: "November 2017",
