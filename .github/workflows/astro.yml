@@ -23,7 +23,7 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-  
+
 env:
   BUILD_PATH: "." # default value when not using subfolders
   # BUILD_PATH: subfolder
@@ -53,7 +53,6 @@ jobs:
           else
             echo "Unknown package manager"
             exit 1
-          fi
       - name: Install dependencies
         run: ${{ env.manager }} ${{ env.command }}
         working-directory: ${{ env.BUILD_PATH }}
@@ -66,7 +65,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: build-artifacts
+          name: github-pages
           path: ${{ env.BUILD_PATH }}/dist
 
   deploy:
@@ -87,4 +86,3 @@ jobs:
         uses: actions/deploy-pages@v2
     outputs:
       page_url: ${{ steps.deployment.outputs.page_url }}
-
